@@ -1,0 +1,11 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install Anki
+      sudo: yes
+      mac_pkg:
+        pkg_type: app
+        url: http://ankisrs.net/download/mirror/anki-2.0.32.dmg
+        archive_type: dmg
+	archive_path: Anki.app
